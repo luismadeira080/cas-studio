@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System - Component Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design-system.css">
+    <style>
+        /* Demo-specific styles */
+        .demo-section {
+            padding: 60px 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .demo-title {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #FF6B35;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .demo-description {
+            color: #666;
+            margin-bottom: 32px;
+        }
+        .demo-item {
+            margin-bottom: 32px;
+        }
+        .demo-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #999;
+            margin-bottom: 8px;
+        }
+        .color-swatch {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #e0e0e0;
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+        .color-info {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header style="background: #000; color: #fff; padding: 40px 0; text-align: center;">
+        <h1 style="color: #fff; margin-bottom: 12px;">Design System Components</h1>
+        <p style="color: #ccc;">Live examples of all components and styles</p>
+    </header>
+
+    <!-- Color Palette -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Color Palette</h2>
+            <p class="demo-description">Core colors used throughout the design system</p>
+
+            <div class="demo-item">
+                <div class="demo-label">Primary Colors</div>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div>
+                        <div class="color-swatch" style="background-color: #FF6B35;"></div>
+                        <div class="color-info">Primary<br>#FF6B35</div>
+                    </div>
+                    <div>
+                        <div class="color-swatch" style="background-color: #E55A25;"></div>
+                        <div class="color-info">Primary Hover<br>#E55A25</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Neutral Colors</div>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div>
+                        <div class="color-swatch" style="background-color: #000000;"></div>
+                        <div class="color-info">Black<br>#000000</div>
+                    </div>
+                    <div>
+                        <div class="color-swatch" style="background-color: #333333;"></div>
+                        <div class="color-info">Dark Gray<br>#333333</div>
+                    </div>
+                    <div>
+                        <div class="color-swatch" style="background-color: #666666;"></div>
+                        <div class="color-info">Gray<br>#666666</div>
+                    </div>
+                    <div>
+                        <div class="color-swatch" style="background-color: #999999;"></div>
+                        <div class="color-info">Light Gray<br>#999999</div>
+                    </div>
+                    <div>
+                        <div class="color-swatch" style="background-color: #E0E0E0;"></div>
+                        <div class="color-info">Border<br>#E0E0E0</div>
+                    </div>
+                    <div>
+                        <div class="color-swatch" style="background-color: #F9F9F9; border: 2px solid #333;"></div>
+                        <div class="color-info">Background<br>#F9F9F9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Typography</h2>
+            <p class="demo-description">Font hierarchy and text styles</p>
+
+            <div class="demo-item">
+                <div class="demo-label">Primary Font - Courier Prime (Monospace)</div>
+                <h1>Heading 1 - Sustainable Architecture</h1>
+                <h2>Heading 2 - High-Performance Homes</h2>
+                <h3>Heading 3 - Design with Intention</h3>
+                <h4>Heading 4 - Built with Precision</h4>
+                <h5>Heading 5 - Natural Materials</h5>
+                <h6>Heading 6 - Crafted Excellence</h6>
+                <p>Body paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Secondary Font - Libre Baskerville (Serif, Italic)</div>
+                <p class="text-serif" style="font-size: 24px;">Designed with intention. Built with precision.</p>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Text Sizes</div>
+                <p class="text-xs">Extra Small Text (10px)</p>
+                <p class="text-sm">Small Text (12px)</p>
+                <p class="text-base">Base Text (14px)</p>
+                <p class="text-md">Medium Text (16px)</p>
+                <p class="text-lg">Large Text (18px)</p>
+                <p class="text-xl">Extra Large Text (20px)</p>
+                <p class="text-2xl">2XL Text (24px)</p>
+                <p class="text-3xl">3XL Text (32px)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Buttons</h2>
+            <p class="demo-description">Button styles and variations</p>
+
+            <div class="demo-item">
+                <div class="demo-label">Primary Button</div>
+                <a href="#" class="btn btn-primary">
+                    <span class="arrow-icon">→</span>
+                    Start Your Project
+                </a>
+                <a href="#" class="btn btn-primary">
+                    Get Started
+                </a>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Secondary Button</div>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+                <a href="#" class="btn btn-secondary">View Projects</a>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Outline Button</div>
+                <a href="#" class="btn btn-outline">Contact Us</a>
+                <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Button Sizes</div>
+                <a href="#" class="btn btn-primary btn-small">Small Button</a>
+                <a href="#" class="btn btn-primary">Default Button</a>
+                <a href="#" class="btn btn-primary btn-large">Large Button</a>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Full Width Button</div>
+                <a href="#" class="btn btn-primary btn-full">Full Width Button</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="demo-section section-alternate">
+        <div class="container">
+            <h2 class="demo-title">Cards</h2>
+            <p class="demo-description">Card components for content display</p>
+
+            <div class="grid grid-3">
+                <div class="card card-hover">
+                    <img src="images/Baleeira_Março2022-91.jpg" alt="Project" class="card-image">
+                    <h3 class="card-title">Modern Sustainable Home</h3>
+                    <p class="card-description">A beautifully crafted home using natural materials and bio-based construction techniques. Located in the heart of Portugal.</p>
+                    <a href="#" class="btn btn-primary mt-4">View Project</a>
+                </div>
+
+                <div class="card card-hover">
+                    <img src="images/Baleeira_Março2022-102.jpg" alt="Project" class="card-image">
+                    <h3 class="card-title">Eco-Friendly Architecture</h3>
+                    <p class="card-description">High-performance design that balances technology with nature. Carbon-zero construction with luxury finishes.</p>
+                    <a href="#" class="btn btn-primary mt-4">View Project</a>
+                </div>
+
+                <div class="card card-hover">
+                    <img src="images/Baleeira_Março2022-103.jpg" alt="Project" class="card-image">
+                    <h3 class="card-title">Natural Materials</h3>
+                    <p class="card-description">Crafted with wood, earth, cork, lime and stone. A testament to sustainable luxury and architectural precision.</p>
+                    <a href="#" class="btn btn-primary mt-4">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms -->
+    <section class="demo-section">
+        <div class="container-md">
+            <h2 class="demo-title">Form Elements</h2>
+            <p class="demo-description">Input fields, textareas, and form components</p>
+
+            <form>
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="you@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="project-type">Project Type</label>
+                    <select id="project-type" class="form-select">
+                        <option>Select a project type</option>
+                        <option>New Construction</option>
+                        <option>Renovation</option>
+                        <option>Consulting</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea id="message" class="form-textarea" placeholder="Tell us about your project"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">
+                    <span class="arrow-icon">→</span>
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="demo-section section-alternate">
+        <div class="container">
+            <h2 class="demo-title">Navigation</h2>
+            <p class="demo-description">Navigation components and links</p>
+
+            <div class="demo-item">
+                <div class="demo-label">Horizontal Navigation (Light Background)</div>
+                <nav class="nav" style="color: #000;">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link active">Projects</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Horizontal Navigation (Dark Background)</div>
+                <div style="background: #000; padding: 30px;">
+                    <nav class="nav" style="color: #fff;">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link active">Projects</a>
+                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid Layouts -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Grid Layouts</h2>
+            <p class="demo-description">Responsive grid systems</p>
+
+            <div class="demo-item">
+                <div class="demo-label">2-Column Grid</div>
+                <div class="grid grid-2">
+                    <div style="background: #f9f9f9; padding: 40px; text-align: center;">
+                        <h4>Column 1</h4>
+                        <p>Grid item content</p>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 40px; text-align: center;">
+                        <h4>Column 2</h4>
+                        <p>Grid item content</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">3-Column Grid</div>
+                <div class="grid grid-3">
+                    <div style="background: #f9f9f9; padding: 40px; text-align: center;">
+                        <h5>Column 1</h5>
+                        <p>Content here</p>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 40px; text-align: center;">
+                        <h5>Column 2</h5>
+                        <p>Content here</p>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 40px; text-align: center;">
+                        <h5>Column 3</h5>
+                        <p>Content here</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">4-Column Grid</div>
+                <div class="grid grid-4">
+                    <div style="background: #f9f9f9; padding: 30px; text-align: center;">
+                        <h6>Col 1</h6>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 30px; text-align: center;">
+                        <h6>Col 2</h6>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 30px; text-align: center;">
+                        <h6>Col 3</h6>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 30px; text-align: center;">
+                        <h6>Col 4</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections -->
+    <section class="demo-section section-alternate">
+        <div class="container">
+            <h2 class="demo-title">Section Styles</h2>
+            <p class="demo-description">Standard section layouts and spacing</p>
+
+            <div class="demo-item">
+                <div class="demo-label">Section with Title and Subtitle</div>
+                <div class="section">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Explore our portfolio of sustainable architecture</p>
+                    <p class="text-center">Section content goes here...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utility Classes -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Utility Classes</h2>
+            <p class="demo-description">Common utility classes for quick styling</p>
+
+            <div class="demo-item">
+                <div class="demo-label">Flex Layout</div>
+                <div class="flex items-center justify-between" style="background: #f9f9f9; padding: 20px;">
+                    <span>Left aligned</span>
+                    <span class="text-primary">Center item</span>
+                    <span>Right aligned</span>
+                </div>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Text Alignment</div>
+                <p class="text-left">Left aligned text</p>
+                <p class="text-center">Center aligned text</p>
+                <p class="text-right">Right aligned text</p>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Text Colors</div>
+                <p class="text-primary">Primary orange text</p>
+                <p class="text-black">Black text</p>
+                <p class="text-gray">Gray text</p>
+            </div>
+
+            <div class="demo-item">
+                <div class="demo-label">Spacing Utilities</div>
+                <div style="background: #f9f9f9;">
+                    <div class="p-4 mb-4" style="background: #e0e0e0;">Padding 16px</div>
+                    <div class="p-6 mb-4" style="background: #e0e0e0;">Padding 24px</div>
+                    <div class="p-8" style="background: #e0e0e0;">Padding 32px</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Page Layout -->
+    <section class="section" style="background: #000; color: #fff;">
+        <div class="container text-center">
+            <h2 class="section-title" style="color: #fff;">Ready to Use This Design System?</h2>
+            <p class="section-subtitle" style="color: #ccc;">All components are production-ready and fully responsive</p>
+            <a href="#" class="btn btn-primary btn-large mt-8">
+                <span class="arrow-icon">→</span>
+                Get Started
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #f9f9f9; padding: 40px 0; text-align: center; color: #666;">
+        <div class="container">
+            <p class="text-sm">Design System Components Demo</p>
+            <p class="text-xs">Built with Courier Prime & Libre Baskerville</p>
+        </div>
+    </footer>
+
+</body>
+</html>
