@@ -1,5 +1,7 @@
 /* ===================================
-   CSS Reset & Base Styles
+   REDESIGNED SUSTAINABLE ARCHITECTURE LANDING PAGE
+   Aesthetic: Clean, editorial, full-bleed storytelling
+   Inspiration: Light, airy, warm coral accents on cream
    =================================== */
 
 * {
@@ -13,11 +15,11 @@ html {
 }
 
 body {
-    font-family: 'Courier Prime', monospace;
-    font-size: 16px; /* Base body text size - consistent across all body content */
-    line-height: 1.7; /* Standardized for optimal readability */
-    color: #000;
-    background-color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c2c2c;
+    background-color: #faf8f5;
     overflow-x: hidden;
 }
 
@@ -32,19 +34,18 @@ a {
     color: inherit;
 }
 
-/* Typography emphasis - consistent bold styling */
 strong {
     font-weight: 700;
 }
 
+/* Remove all max-width containers for full-bleed design */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
+    padding: 0;
 }
 
 /* ===================================
-   Header
+   Header - Minimal, Transparent
    =================================== */
 
 .header {
@@ -53,94 +54,126 @@ strong {
     left: 0;
     right: 0;
     background: transparent;
-    backdrop-filter: none;
     z-index: 1000;
-    padding: 25px 0;
-    border-bottom: none;
+    padding: 30px 60px;
+    transition: background 0.3s ease;
+}
+
+.header.scrolled {
+    background: rgba(250, 248, 245, 0.95);
+    backdrop-filter: blur(10px);
 }
 
 .header .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .logo svg {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    color: #2c2c2c;
+    transition: color 0.3s ease;
+}
+
+.header.light-mode .logo svg,
+.header.light-mode .nav a {
     color: #fff;
-    margin-right: auto;
 }
 
 .nav {
     display: flex;
-    gap: 80px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #fff;
+    gap: 50px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2c2c2c;
 }
 
 .nav a {
     transition: color 0.3s ease;
-    color: #fff;
+    position: relative;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #FF6B4A;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
 }
 
 .nav a:hover {
-    color: #FF6B35;
+    color: #FF6B4A;
 }
 
 /* ===================================
-   Buttons
+   Buttons - Minimal, Elegant
    =================================== */
 
 .btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 14px 28px;
+    gap: 12px;
+    padding: 16px 32px;
     font-family: 'Courier Prime', monospace;
-    font-size: 14px; /* Aligned to design system base - improved from 13px */
-    font-weight: 700;
-    letter-spacing: 0.8px; /* Consistent spacing for uppercase text */
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    border: none;
+    border: 1px solid #2c2c2c;
+    background: transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
-    white-space: nowrap;
+    transition: all 0.4s ease;
 }
 
 .btn-primary {
-    background-color: #FF6B35;
+    background-color: #FF6B4A;
     color: #fff;
+    border-color: #FF6B4A;
 }
 
 .btn-primary:hover {
-    background-color: #E55A25;
+    background-color: #2c2c2c;
+    border-color: #2c2c2c;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
 }
 
 .arrow-icon {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover .arrow-icon {
+    transform: translateX(4px);
 }
 
 .btn-large {
-    padding: 18px 45px;
-    font-size: 18px; /* Larger buttons get larger text - design system alignment */
-    letter-spacing: 1px; /* Slightly more spacing for larger size */
+    padding: 20px 50px;
+    font-size: 12px;
 }
 
 /* ===================================
-   Hero Section
+   Hero Section - Full Bleed Editorial
    =================================== */
 
 .hero {
     position: relative;
     height: 100vh;
-    min-height: 600px;
+    min-height: 700px;
     margin-top: 0;
     overflow: hidden;
 }
@@ -168,7 +201,7 @@ strong {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.3) 100%);
 }
 
 .hero-content {
@@ -177,55 +210,55 @@ strong {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0 60px;
+    justify-content: flex-end;
+    padding: 0 8% 12%;
     color: #fff;
-    text-align: right;
+    text-align: left;
 }
 
 .hero-title {
-    font-family: 'Courier Prime', monospace;
-    font-size: 48px; /* H1 - Primary page title */
-    font-weight: 700;
-    line-height: 1.2; /* Tight leading for display text */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px; /* Improved readability for large uppercase */
+    font-family: 'Libre Baskerville', serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+    max-width: 800px;
 }
 
 .hero-subtitle {
-    font-family: 'Courier Prime', monospace;
-    font-size: 32px; /* H2 - Secondary hierarchy, clear visual step down */
-    font-weight: 400; /* Normal weight for subtitle contrast */
-    line-height: 1.3; /* Slightly more breathing room than title */
-    margin-bottom: 30px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .hero-text {
     font-family: 'Libre Baskerville', serif;
-    font-size: 20px; /* Reduced from 24px for better hierarchy - supporting text should be smaller */
-    line-height: 1.6; /* Comfortable reading for italic serif */
+    font-size: 18px;
+    line-height: 1.6;
     font-style: italic;
+    max-width: 500px;
+    opacity: 0.95;
 }
 
 /* ===================================
-   Interior Section
+   Interior Section - Asymmetric Grid
    =================================== */
 
 .interior-section {
+    background-color: #faf8f5;
     padding: 0;
-    max-width: 100%;
 }
 
 .interior-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 0;
-    max-width: 100%;
-    margin: 0;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 .interior-image,
@@ -235,7 +268,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
 .interior-image img,
@@ -247,171 +280,221 @@ strong {
 
 .interior-text,
 .statement-text {
-    font-family: 'Courier Prime', monospace;
-    font-size: 28px; /* Adjusted from 32px - should be smaller than hero subtitle for proper hierarchy */
-    font-weight: 700; /* Bold for emphasis as display statements */
-    line-height: 1.4; /* Optimal for mid-size display text */
-    padding: 60px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 10%;
     text-align: left;
+    color: #FF6B4A;
 }
 
 .statement-text {
     background-color: #fff;
+    font-size: 52px;
+    letter-spacing: -1px;
 }
 
-/* Ensure strong tags in interior sections maintain consistent bold weight */
+.interior-text {
+    background-color: #faf8f5;
+    color: #2c2c2c;
+}
+
 .interior-text strong,
 .statement-text strong {
-    font-weight: 700;
+    font-weight: 400;
+    display: block;
 }
 
 /* ===================================
-   Materials Section
+   Materials Section - Centered Editorial
    =================================== */
 
 .materials-section {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
+    padding: 120px 8%;
+    background-color: #fff;
+    text-align: center;
 }
 
 .materials-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.material-image {
+    aspect-ratio: 1;
+    overflow: hidden;
 }
 
 .material-image img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.material-image:hover img {
+    transform: scale(1.05);
 }
 
 .materials-text {
-    text-align: center;
-    font-family: 'Courier Prime', monospace;
-    font-size: 18px; /* Emphasis body text - consistent with design system */
-    line-height: 1.7; /* Standardized comfortable reading */
-    max-width: 600px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 28px;
+    line-height: 1.6;
+    max-width: 700px;
     margin: 0 auto;
+    color: #2c2c2c;
 }
 
-/* Strong elements in materials text for emphasis */
 .materials-text strong {
-    font-weight: 700;
+    font-weight: 400;
+    color: #FF6B4A;
 }
 
 /* ===================================
-   Luxury Section
+   Luxury Section - Split Screen
    =================================== */
 
 .luxury-section {
-    padding: 80px 20px;
+    padding: 0;
+    background-color: #faf8f5;
 }
 
 .luxury-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: 45% 55%;
+    gap: 0;
+    min-height: 80vh;
     align-items: center;
 }
 
 .luxury-text {
-    font-family: 'Courier Prime', monospace;
-    font-size: 20px; /* Display text size for key messaging */
-    font-weight: 700; /* Bold for key statements */
-    line-height: 1.6; /* Balanced for this size */
-    padding: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10%;
+    color: #2c2c2c;
+}
+
+.luxury-text strong {
+    font-weight: 400;
+    color: #FF6B4A;
+}
+
+.luxury-image {
+    height: 100%;
+    min-height: 80vh;
 }
 
 .luxury-image img {
     width: 100%;
-    height: auto;
-}
-
-/* Ensure bold elements in luxury text are emphasized */
-.luxury-text strong {
-    font-weight: 700;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ===================================
-   Tech Section
+   Tech Section - Reversed Split
    =================================== */
 
 .tech-section {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
+    padding: 0;
+    background-color: #fff;
 }
 
 .tech-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: 55% 45%;
+    gap: 0;
+    min-height: 80vh;
     align-items: center;
+}
+
+.tech-image {
+    height: 100%;
+    min-height: 80vh;
 }
 
 .tech-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .tech-text {
-    font-family: 'Courier Prime', monospace;
-    font-size: 20px; /* Consistent with luxury-text - same visual weight */
-    line-height: 1.6; /* Standardized with luxury-text */
-    padding: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10%;
+    color: #2c2c2c;
 }
 
-/* Bold emphasis in tech text */
 .tech-text strong {
-    font-weight: 700;
+    font-weight: 400;
+    color: #FF6B4A;
 }
 
 /* ===================================
-   Services Section
+   Services Section - Clean Layout
    =================================== */
 
 .services-section {
-    padding: 100px 20px;
+    padding: 140px 8%;
+    background-color: #faf8f5;
 }
 
 .services-title {
-    font-family: 'Courier Prime', monospace;
-    font-size: 24px; /* H3 size - section introduction text */
-    font-weight: 400; /* Normal weight for longer descriptive text */
-    line-height: 1.6; /* Comfortable reading for multi-line content */
+    font-family: 'Libre Baskerville', serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.5;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    color: #2c2c2c;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1400px;
     margin: 0 auto;
+}
+
+.service-image,
+.service-exterior {
+    aspect-ratio: 4/5;
+    overflow: hidden;
 }
 
 .service-image img,
 .service-exterior img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-image:hover img,
+.service-exterior:hover img {
+    transform: scale(1.05);
 }
 
 .services-list {
     font-family: 'Courier Prime', monospace;
-    font-size: 16px; /* Standard body text size */
-    font-weight: 700; /* Bold for service item names */
-    line-height: 1.8; /* Reduced from 2 for better visual density while maintaining readability */
-    padding: 20px;
+    font-size: 15px;
+    line-height: 2.2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .services-list ul {
@@ -419,14 +502,17 @@ strong {
 }
 
 .services-list li {
-    margin-bottom: 20px;
-    font-weight: 400; /* Normal weight for list items */
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #666;
 }
 
-/* Bold service names within list items */
 .services-list strong {
     font-weight: 700;
-    font-size: 16px; /* Same size as base list text */
+    font-size: 16px;
+    color: #2c2c2c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* ===================================
@@ -434,164 +520,183 @@ strong {
    =================================== */
 
 .testimonials-section {
-    padding: 100px 20px;
-    background-color: #f9f9f9;
+    padding: 140px 8%;
+    background-color: #fff;
 }
 
 .section-title {
     font-family: 'Courier Prime', monospace;
-    font-size: 32px; /* H3 - Standardized section title size across all sections */
-    font-weight: 700; /* Bold for clear hierarchy */
-    line-height: 1.2; /* Tight for heading impact */
-    letter-spacing: 0.6px; /* Design system standard for this size */
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    color: #999;
 }
 
 .testimonial {
-    max-width: 800px;
-    margin: 0 auto 40px;
+    max-width: 900px;
+    margin: 0 auto 80px;
     text-align: center;
-    font-family: 'Courier Prime', monospace;
-    font-size: 18px; /* Emphasis text for testimonial quotes */
-    line-height: 1.7; /* Standardized comfortable reading */
+    font-family: 'Libre Baskerville', serif;
 }
 
 .testimonial p {
+    font-size: 28px;
     font-style: italic;
-    font-weight: 400; /* Normal weight for readability */
-    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #2c2c2c;
 }
 
 .testimonial cite {
-    font-size: 14px; /* Supporting information - smaller than quote */
-    font-weight: 400; /* Normal weight */
+    font-size: 14px;
+    font-weight: 400;
     font-style: normal;
-    color: #666;
-    line-height: 1.6; /* Proper spacing for small text */
+    color: #999;
+    letter-spacing: 1px;
 }
 
 /* ===================================
-   Detail Section
+   Detail Section - Triptych Layout
    =================================== */
 
 .detail-section {
-    padding: 80px 20px;
+    padding: 0;
+    background-color: #faf8f5;
 }
 
 .detail-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    min-height: 70vh;
+    align-items: stretch;
+}
+
+.detail-image,
+.detail-image-2 {
+    overflow: hidden;
 }
 
 .detail-image img,
 .detail-image-2 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .detail-text {
-    font-family: 'Courier Prime', monospace;
-    font-size: 16px; /* Standard body text */
-    line-height: 1.7; /* Standardized from 2 for better visual consistency */
-    padding: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    line-height: 1.7;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
 }
 
 .detail-text p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: #666;
 }
 
-/* Strong tags within detail text for emphasis */
 .detail-text strong {
-    font-weight: 700;
-    font-size: 18px; /* Slightly larger for emphasis statements */
+    font-weight: 400;
+    font-size: 28px;
+    color: #FF6B4A;
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* ===================================
-   Team Section
+   Team Section - Side by Side
    =================================== */
 
 .team-section {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
+    padding: 0;
+    background-color: #fff;
 }
 
 .team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 0;
+    min-height: 80vh;
     align-items: center;
+}
+
+.team-image {
+    height: 100%;
+    min-height: 80vh;
 }
 
 .team-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .team-text {
     font-family: 'Courier Prime', monospace;
-    font-size: 14px; /* Smaller supporting text for detailed information */
-    line-height: 1.8; /* Improved from 2 for better density */
-    padding: 20px;
+    font-size: 15px;
+    line-height: 2;
+    padding: 10%;
+    color: #666;
 }
 
 .team-text p {
-    margin-bottom: 15px;
-    font-weight: 400; /* Normal weight for body content */
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
-/* Bold headings within team text */
 .team-text strong {
     font-weight: 700;
-    font-size: 16px; /* Category headings slightly larger */
-    letter-spacing: 0.5px; /* Subtle spacing for emphasis */
-    display: block; /* Force block display for proper spacing */
-    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+    text-transform: uppercase;
 }
 
 /* ===================================
-   FAQ Section
+   FAQ Section - Two Column
    =================================== */
 
 .faq-section {
-    padding: 100px 20px;
-    background-color: #fff;
+    padding: 140px 8%;
+    background-color: #faf8f5;
 }
 
 .faq-title {
     font-family: 'Courier Prime', monospace;
-    font-size: 14px; /* Small uppercase label - reduced from 20px for better hierarchy */
-    font-weight: 700; /* Bold for section marker clarity */
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 60px;
-    color: #666; /* Subdued color for supporting label */
-    letter-spacing: 1.5px; /* Generous spacing for small uppercase */
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #999;
 }
 
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 60px;
-    max-width: 1000px;
+    gap: 60px 80px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .faq-item {
-    border-left: 1px solid #e0e0e0;
-    padding-left: 20px;
+    border: none;
+    padding: 0;
     transition: all 0.3s ease;
-}
-
-.faq-item:hover {
-    border-left-color: #FF6B35;
 }
 
 .faq-question {
@@ -599,35 +704,38 @@ strong {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-family: 'Courier Prime', monospace;
-    font-size: 16px; /* Increased from 14px for better readability and hierarchy */
-    font-weight: 700; /* Bold for question emphasis */
-    line-height: 1.5; /* Improved from 1.4 for multi-line questions */
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
     margin-bottom: 0;
-    padding: 0;
-    color: #000;
+    padding: 0 0 16px 0;
+    color: #2c2c2c;
     background: none;
     border: none;
+    border-bottom: 1px solid #e0e0e0;
     cursor: pointer;
     text-align: left;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .faq-question:hover {
-    color: #FF6B35;
+    color: #FF6B4A;
+    border-bottom-color: #FF6B4A;
 }
 
 .faq-question span:first-child {
     flex: 1;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .faq-icon {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 300;
     line-height: 1;
     transition: transform 0.3s ease;
     flex-shrink: 0;
+    color: #FF6B4A;
 }
 
 .faq-question[aria-expanded="true"] .faq-icon {
@@ -642,11 +750,11 @@ strong {
 
 .faq-answer-content {
     font-family: 'Courier Prime', monospace;
-    font-size: 14px; /* Consistent supporting text size - improved from 13px */
-    font-weight: 400; /* Normal weight for answer content */
-    line-height: 1.7; /* Standardized comfortable reading */
-    color: #666; /* Subdued for answer vs question hierarchy */
-    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #666;
+    padding-top: 20px;
 }
 
 .faq-item.active .faq-answer {
@@ -654,98 +762,221 @@ strong {
 }
 
 /* ===================================
-   Footer
+   Footer - Minimal CTA
    =================================== */
 
 .footer {
-    padding: 80px 20px;
+    padding: 120px 8%;
     text-align: center;
+    background-color: #fff;
 }
 
 /* ===================================
    Responsive Design
    =================================== */
 
-@media screen and (max-width: 768px) {
-    .header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav {
-        gap: 20px;
-    }
-
-    .hero {
-        margin-top: 140px;
-    }
-
+@media screen and (max-width: 1024px) {
     .hero-title {
-        font-size: 32px; /* Mobile H1 - maintains hierarchy */
+        font-size: 56px;
     }
 
     .hero-subtitle {
-        font-size: 24px; /* Mobile H2 - proper step down */
+        font-size: 24px;
+    }
+
+    .statement-text {
+        font-size: 42px;
+    }
+
+    .interior-text {
+        font-size: 36px;
+    }
+
+    .luxury-text,
+    .tech-text {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .nav {
+        gap: 30px;
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding: 0 6% 10%;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
     }
 
     .hero-text {
-        font-size: 18px; /* Mobile supporting text */
-    }
-
-    .statement-text,
-    .interior-text {
-        font-size: 22px; /* Mobile display text - reduced from 24px for consistency */
-        padding: 40px;
-    }
-
-    .interior-grid,
-    .luxury-grid,
-    .tech-grid,
-    .services-grid,
-    .detail-grid,
-    .team-grid {
-        grid-template-columns: 1fr;
+        font-size: 16px;
     }
 
     .interior-grid {
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
-        min-height: auto;
     }
 
     .interior-image,
     .statement-text,
     .interior-text,
     .exterior-image {
-        min-height: 40vh;
+        min-height: 50vh;
+    }
+
+    .statement-text,
+    .interior-text {
+        font-size: 32px;
+        padding: 8%;
+    }
+
+    .materials-section {
+        padding: 80px 6%;
     }
 
     .materials-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .materials-text {
+        font-size: 22px;
+    }
+
+    .luxury-grid,
+    .tech-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .luxury-text,
+    .tech-text {
+        font-size: 26px;
+        padding: 8%;
+    }
+
+    .luxury-image,
+    .tech-image,
+    .team-image {
+        min-height: 50vh;
+    }
+
+    .services-section {
+        padding: 100px 6%;
+    }
+
+    .services-title {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-text {
+        padding: 40px;
+        font-size: 20px;
+    }
+
+    .testimonials-section {
+        padding: 100px 6%;
+    }
+
+    .testimonial p {
+        font-size: 22px;
+    }
+
+    .faq-section {
+        padding: 100px 6%;
     }
 
     .faq-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
+    .footer {
+        padding: 80px 6%;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .hero-title {
-        font-size: 24px; /* Small mobile H1 */
+        font-size: 32px;
     }
 
     .hero-subtitle {
-        font-size: 20px; /* Small mobile H2 - improved from 18px for hierarchy */
+        font-size: 18px;
     }
 
     .statement-text,
     .interior-text {
-        font-size: 20px; /* Small mobile display text */
-        padding: 30px;
+        font-size: 26px;
+        padding: 6%;
+    }
+
+    .materials-text {
+        font-size: 18px;
+    }
+
+    .luxury-text,
+    .tech-text {
+        font-size: 22px;
+        padding: 6%;
+    }
+
+    .services-title {
+        font-size: 24px;
+    }
+
+    .services-list {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .testimonial p {
+        font-size: 20px;
+    }
+
+    .faq-question {
+        font-size: 16px;
     }
 
     .btn-large {
-        padding: 15px 30px;
-        font-size: 14px; /* Maintained minimum readable size - improved from 12px */
+        padding: 16px 32px;
+        font-size: 11px;
     }
 }
