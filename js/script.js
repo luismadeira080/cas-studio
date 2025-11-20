@@ -110,8 +110,10 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
+        header.classList.add('scrolled');
         header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     } else {
+        header.classList.remove('scrolled');
         header.style.boxShadow = 'none';
     }
 
@@ -129,3 +131,79 @@ document.querySelectorAll('.faq-question').forEach(button => {
         button.setAttribute('aria-expanded', !isActive);
     });
 });
+
+// Enquiry Form Functionality
+const enquiryForm = document.getElementById('enquiryForm');
+
+// Show/hide "Other" project description field
+const otherProjectRadio = document.getElementById('otherProject');
+const otherProjectDesc = document.getElementById('otherProjectDesc');
+
+document.querySelectorAll('input[name="projectType"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (otherProjectRadio.checked) {
+            otherProjectDesc.classList.add('active');
+        } else {
+            otherProjectDesc.classList.remove('active');
+            otherProjectDesc.value = '';
+        }
+    });
+});
+
+// Limit priorities to 2 selections
+const priorityCheckboxes = document.querySelectorAll('.priority-checkbox');
+priorityCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+        const checkedCount = document.querySelectorAll('.priority-checkbox:checked').length;
+
+        if (checkedCount > 2) {
+            checkbox.checked = false;
+            alert('Please select up to 2 priorities only.');
+        }
+    });
+});
+
+// Form submission handling
+if (enquiryForm) {
+    enquiryForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Collect form data
+        const formData = new FormData(enquiryForm);
+        const data = {};
+
+        // Convert FormData to object
+        for (let [key, value] of formData.entries()) {
+            if (key === 'priorities') {
+                if (!data[key]) data[key] = [];
+                data[key].push(value);
+            } else {
+                data[key] = value;
+            }
+        }
+
+        // Log form data (replace with actual submission logic)
+        console.log('Form submitted:', data);
+
+        // Track conversion
+        trackConversion('enquiry_form_submit');
+
+        // Optional: Send to Google Analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'submit', {
+                'event_category': 'Form',
+                'event_label': 'Enquiry Form'
+            });
+        }
+
+        // Show success message
+        alert('Thank you for your enquiry! We will be in touch soon.');
+
+        // Reset form
+        enquiryForm.reset();
+        otherProjectDesc.classList.remove('active');
+
+        // TODO: Replace with actual form submission to your backend or email service
+        // Example: fetch('/api/submit-enquiry', { method: 'POST', body: JSON.stringify(data) })
+    });
+}

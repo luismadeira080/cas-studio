@@ -255,10 +255,213 @@
         </div>
     </section>
 
-    <!-- Footer CTA -->
-    <footer class="footer" id="contact">
+    <!-- Enquiry Form Section -->
+    <section class="enquiry-section" id="contact">
         <div class="container">
-            <a href="#contact" class="btn btn-primary btn-large">START YOUR PROJECT</a>
+            <div class="enquiry-header">
+                <h3 class="enquiry-title">Start Your Project</h3>
+                <p class="enquiry-subtitle">For discerning clients who value quality, craft, and sustainability</p>
+            </div>
+
+            <form class="enquiry-form" id="enquiryForm">
+                <!-- Name and Email -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <!-- Project Location -->
+                <div class="form-group">
+                    <label for="location">Project Location</label>
+                    <input type="text" id="location" name="location" placeholder="Region, City, Town">
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="locationUnknown" name="locationUnknown">
+                        <label for="locationUnknown">Not known yet</label>
+                    </div>
+                </div>
+
+                <!-- Plot/Site Status -->
+                <div class="form-group">
+                    <label>Do you already have a plot or site? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="hasPlot" name="plotStatus" value="has_plot" required>
+                            <label for="hasPlot">Yes, I already have one</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="searching" name="plotStatus" value="searching">
+                            <label for="searching">I'm still searching</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="exploring" name="plotStatus" value="exploring">
+                            <label for="exploring">I'm exploring different options</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Type -->
+                <div class="form-group">
+                    <label>What type of project are you planning? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="newHome" name="projectType" value="new_home" required>
+                            <label for="newHome">New home / main residence</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="secondHome" name="projectType" value="second_home">
+                            <label for="secondHome">Second home</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="renovation" name="projectType" value="renovation">
+                            <label for="renovation">Renovation or extension</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="otherProject" name="projectType" value="other">
+                            <label for="otherProject">Other</label>
+                        </div>
+                    </div>
+                    <input type="text" id="otherProjectDesc" name="otherProjectDesc" placeholder="Please describe briefly" class="conditional-input">
+                </div>
+
+                <!-- Project Priorities -->
+                <div class="form-group">
+                    <label>What matters most to you in this project? (select up to 2 options)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="sustainability" name="priorities" value="sustainability" class="priority-checkbox">
+                            <label for="sustainability">Real sustainability (bio-based, local materials)</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="efficiency" name="priorities" value="efficiency" class="priority-checkbox">
+                            <label for="efficiency">Energy efficiency and thermal comfort</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="design" name="priorities" value="design" class="priority-checkbox">
+                            <label for="design">Unique, handcrafted design</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="process" name="priorities" value="process" class="priority-checkbox">
+                            <label for="process">A clear, stress-free process</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="fast" name="priorities" value="fast" class="priority-checkbox">
+                            <label for="fast">Fast completion time</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Involvement Level -->
+                <div class="form-group">
+                    <label>How involved would you like to be? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="someDecisions" name="involvement" value="some_decisions" required>
+                            <label for="someDecisions">I prefer to take part in some design decisions</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="fullProcess" name="involvement" value="full_process">
+                            <label for="fullProcess">I want you to manage the full process</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="notSure" name="involvement" value="not_sure">
+                            <label for="notSure">Not sure yet</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget Priorities -->
+                <div class="form-group">
+                    <label>Budget priorities *</label>
+                    <p class="field-description">We focus on quality, not shortcuts. Which of these best describes your approach?</p>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="qualityFirst" name="budget" value="quality_first" required>
+                            <label for="qualityFirst">Quality and craftsmanship come first</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="definingBudget" name="budget" value="defining">
+                            <label for="definingBudget">I'm still defining my budget</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="lowCost" name="budget" value="low_cost">
+                            <label for="lowCost">I'm looking for low-cost options (not our focus)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="form-group">
+                    <label>When do you plan to start? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="within3" name="timeline" value="within_3" required>
+                            <label for="within3">Within 3 months</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="months3to6" name="timeline" value="3_to_6">
+                            <label for="months3to6">In 3–6 months</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="months6to12" name="timeline" value="6_to_12">
+                            <label for="months6to12">In 6–12 months</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="justExploring" name="timeline" value="exploring">
+                            <label for="justExploring">Just exploring ideas for now</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Natural Materials Interest -->
+                <div class="form-group">
+                    <label for="naturalMaterials">What attracts you to natural building materials?</label>
+                    <textarea id="naturalMaterials" name="naturalMaterials" rows="4" placeholder="Share your thoughts..."></textarea>
+                </div>
+
+                <!-- How They Found Us -->
+                <div class="form-group">
+                    <label>How did you find CAS Studio? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="google" name="referralSource" value="google" required>
+                            <label for="google">Google Search</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="social" name="referralSource" value="social">
+                            <label for="social">Instagram / Social Media</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="referral" name="referralSource" value="referral">
+                            <label for="referral">Referral / Word of mouth</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="otherSource" name="referralSource" value="other">
+                            <label for="otherSource">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span class="arrow-icon">→</span>
+                        Submit Enquiry
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">CAS Studio - Sustainable Crafted Architecture</p>
         </div>
     </footer>
 

@@ -814,13 +814,190 @@ strong {
 }
 
 /* ===================================
-   Footer - Minimal CTA
+   Enquiry Form Section
+   =================================== */
+
+.enquiry-section {
+    padding: 140px 8%;
+    background-color: #fff;
+}
+
+.enquiry-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.enquiry-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 200; /* Extra Light for elegant heading */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.enquiry-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300; /* Light for subtitle */
+    font-style: italic;
+    color: #666;
+}
+
+.enquiry-form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500; /* Medium for labels */
+    margin-bottom: 12px;
+    color: #2c2c2c;
+    letter-spacing: 0.5px;
+}
+
+.field-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300; /* Light for descriptions */
+    color: #666;
+    margin-top: -8px;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300; /* Light for input text */
+    color: #2c2c2c;
+    background-color: #faf8f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #FF6B4A;
+    background-color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.conditional-input {
+    margin-top: 12px;
+    display: none;
+}
+
+.conditional-input.active {
+    display: block;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #FF6B4A;
+}
+
+.radio-option label,
+.checkbox-option label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300; /* Light for option labels */
+    color: #2c2c2c;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #FF6B4A;
+}
+
+.form-checkbox label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300; /* Light */
+    color: #666;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.form-actions {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.form-actions .btn {
+    min-width: 250px;
+}
+
+/* ===================================
+   Footer - Minimal
    =================================== */
 
 .footer {
-    padding: 120px 8%;
+    padding: 60px 8%;
     text-align: center;
-    background-color: #fff;
+    background-color: #faf8f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300; /* Light */
+    color: #999;
+    letter-spacing: 1px;
 }
 
 /* ===================================
@@ -985,8 +1162,56 @@ strong {
         gap: 40px;
     }
 
+    .enquiry-section {
+        padding: 100px 6%;
+    }
+
+    .enquiry-title {
+        font-size: 32px;
+    }
+
+    .enquiry-subtitle {
+        font-size: 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
     .footer {
         padding: 80px 6%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .enquiry-section {
+        padding: 80px 6%;
+    }
+
+    .enquiry-header {
+        margin-bottom: 60px;
+    }
+
+    .enquiry-title {
+        font-size: 28px;
+    }
+
+    .enquiry-subtitle {
+        font-size: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 32px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-actions .btn {
+        min-width: 100%;
     }
 }
 
