@@ -1,7 +1,9 @@
 /* ===================================
    REDESIGNED SUSTAINABLE ARCHITECTURE LANDING PAGE
    Aesthetic: Clean, editorial, full-bleed storytelling
+   Typography: Roboto font family with strategic weight distribution
    Inspiration: Light, airy, warm coral accents on cream
+   Updated: Modern sans-serif with extensive weight range
    =================================== */
 
 * {
@@ -15,8 +17,9 @@ html {
 }
 
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    font-weight: 400; /* Regular weight for body text */
     line-height: 1.8;
     color: #2c2c2c;
     background-color: #faf8f5;
@@ -35,7 +38,7 @@ a {
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 700; /* Bold for strong emphasis */
 }
 
 /* Remove all max-width containers for full-bleed design */
@@ -72,24 +75,48 @@ strong {
     padding: 0 20px;
 }
 
-.logo svg {
-    width: 40px;
-    height: 40px;
-    color: #2c2c2c;
-    transition: color 0.3s ease;
+.logo {
+    display: block;
+    position: relative;
+    transition: opacity 0.3s ease;
 }
 
-.header.light-mode .logo svg,
-.header.light-mode .nav a {
-    color: #fff;
+.logo img {
+    height: 120px;
+    width: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.logo-white {
+    opacity: 1;
+}
+
+.logo-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.header.scrolled .logo-white {
+    opacity: 0;
+}
+
+.header.scrolled .logo-dark {
+    opacity: 1;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .nav {
     display: flex;
     gap: 50px;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 11px;
-    font-weight: 400;
+    font-weight: 500; /* Medium weight for navigation clarity */
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #2c2c2c;
@@ -128,9 +155,9 @@ strong {
     align-items: center;
     gap: 12px;
     padding: 16px 32px;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 11px;
-    font-weight: 400;
+    font-weight: 500; /* Medium weight for button text */
     letter-spacing: 2px;
     text-transform: uppercase;
     border: 1px solid #2c2c2c;
@@ -191,7 +218,7 @@ strong {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center 40%;
 }
 
 .hero-image::after {
@@ -201,7 +228,7 @@ strong {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 100%);
 }
 
 .hero-content {
@@ -217,9 +244,9 @@ strong {
 }
 
 .hero-title {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 72px;
-    font-weight: 400;
+    font-weight: 100; /* Thin weight for dramatic, elegant hero title */
     line-height: 1.1;
     margin-bottom: 24px;
     letter-spacing: -1px;
@@ -227,17 +254,18 @@ strong {
 }
 
 .hero-subtitle {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 200; /* Extra Light for airy subtitle */
     line-height: 1.4;
     margin-bottom: 20px;
     max-width: 600px;
 }
 
 .hero-text {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    font-weight: 100; /* Thin italic for decorative tagline */
     line-height: 1.6;
     font-style: italic;
     max-width: 500px;
@@ -280,9 +308,9 @@ strong {
 
 .interior-text,
 .statement-text {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 42px;
-    font-weight: 400;
+    font-weight: 300; /* Light weight for large, airy editorial text */
     line-height: 1.3;
     padding: 10%;
     text-align: left;
@@ -292,6 +320,7 @@ strong {
 .statement-text {
     background-color: #fff;
     font-size: 52px;
+    font-weight: 200; /* Extra Light for the large statement */
     letter-spacing: -1px;
 }
 
@@ -302,7 +331,7 @@ strong {
 
 .interior-text strong,
 .statement-text strong {
-    font-weight: 400;
+    font-weight: 300; /* Light for emphasis within large text */
     display: block;
 }
 
@@ -341,8 +370,9 @@ strong {
 }
 
 .materials-text {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
+    font-weight: 300; /* Light weight for balanced body text */
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto;
@@ -350,7 +380,7 @@ strong {
 }
 
 .materials-text strong {
-    font-weight: 400;
+    font-weight: 600; /* Semi Bold for emphasis in body text */
     color: #FF6B4A;
 }
 
@@ -372,16 +402,16 @@ strong {
 }
 
 .luxury-text {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 300; /* Light for spacious, editorial feel */
     line-height: 1.5;
     padding: 10%;
     color: #2c2c2c;
 }
 
 .luxury-text strong {
-    font-weight: 400;
+    font-weight: 600; /* Semi Bold for emphasis */
     color: #FF6B4A;
 }
 
@@ -425,16 +455,16 @@ strong {
 }
 
 .tech-text {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 300; /* Light for clean, modern feel */
     line-height: 1.5;
     padding: 10%;
     color: #2c2c2c;
 }
 
 .tech-text strong {
-    font-weight: 400;
+    font-weight: 600; /* Semi Bold for visual emphasis */
     color: #FF6B4A;
 }
 
@@ -448,9 +478,9 @@ strong {
 }
 
 .services-title {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 300; /* Light for large section heading */
     line-height: 1.5;
     text-align: center;
     margin-bottom: 100px;
@@ -488,8 +518,9 @@ strong {
 }
 
 .services-list {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    font-weight: 300; /* Light for list items */
     line-height: 2.2;
     padding: 40px;
     display: flex;
@@ -503,12 +534,12 @@ strong {
 
 .services-list li {
     margin-bottom: 30px;
-    font-weight: 400;
+    font-weight: 300; /* Light weight for airy list appearance */
     color: #666;
 }
 
 .services-list strong {
-    font-weight: 700;
+    font-weight: 700; /* Bold for service labels */
     font-size: 16px;
     color: #2c2c2c;
     text-transform: uppercase;
@@ -525,9 +556,9 @@ strong {
 }
 
 .section-title {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 11px;
-    font-weight: 400;
+    font-weight: 500; /* Medium for UI section labels */
     line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -540,13 +571,13 @@ strong {
     max-width: 900px;
     margin: 0 auto 80px;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .testimonial p {
     font-size: 28px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 400; /* Regular italic for testimonial quotes */
     line-height: 1.6;
     margin-bottom: 24px;
     color: #2c2c2c;
@@ -554,7 +585,7 @@ strong {
 
 .testimonial cite {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300; /* Light for attribution text */
     font-style: normal;
     color: #999;
     letter-spacing: 1px;
@@ -590,8 +621,9 @@ strong {
 }
 
 .detail-text {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    font-weight: 300; /* Light for detail text */
     line-height: 1.7;
     padding: 60px;
     display: flex;
@@ -602,11 +634,12 @@ strong {
 
 .detail-text p {
     margin-bottom: 20px;
+    font-weight: 300; /* Light weight */
     color: #666;
 }
 
 .detail-text strong {
-    font-weight: 400;
+    font-weight: 600; /* Semi Bold for feature labels */
     font-size: 28px;
     color: #FF6B4A;
     display: block;
@@ -642,8 +675,9 @@ strong {
 }
 
 .team-text {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    font-weight: 300; /* Light for team description text */
     line-height: 2;
     padding: 10%;
     color: #666;
@@ -651,11 +685,11 @@ strong {
 
 .team-text p {
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 300; /* Light weight */
 }
 
 .team-text strong {
-    font-weight: 700;
+    font-weight: 700; /* Bold for team section labels */
     font-size: 13px;
     letter-spacing: 1.5px;
     display: block;
@@ -675,9 +709,9 @@ strong {
 }
 
 .faq-title {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 11px;
-    font-weight: 400;
+    font-weight: 500; /* Medium for UI section labels */
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
@@ -704,9 +738,9 @@ strong {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 400; /* Regular for question text */
     line-height: 1.5;
     margin-bottom: 0;
     padding: 0 0 16px 0;
@@ -749,9 +783,9 @@ strong {
 }
 
 .faq-answer-content {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300; /* Light for answer text */
     line-height: 1.8;
     color: #666;
     padding-top: 20px;
