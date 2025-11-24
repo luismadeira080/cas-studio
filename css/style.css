@@ -787,8 +787,20 @@ strong {
    =================================== */
 
 .team-section {
-    padding: 0;
+    padding: 140px 0 0 0;
     background-color: #fff;
+}
+
+.team-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #FF6B4A;
+    padding: 0 8%;
 }
 
 .team-grid {
@@ -1226,6 +1238,15 @@ strong {
 
     .luxury-grid,
     .tech-grid,
+    .team-section {
+        padding: 100px 0 0 0;
+    }
+
+    .team-title {
+        font-size: 42px;
+        margin-bottom: 60px;
+    }
+
     .team-grid {
         grid-template-columns: 1fr;
     }
@@ -1399,6 +1420,11 @@ strong {
 
     .hero-subtitle {
         font-size: 18px;
+    }
+
+    .team-title {
+        font-size: 32px;
+        margin-bottom: 40px;
     }
 
     .statement-text,
