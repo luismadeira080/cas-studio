@@ -383,19 +383,42 @@ strong {
 
 .materials-text {
     font-family: 'Roboto', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+.materials-intro {
     font-size: 28px;
     font-weight: 400;
-    /* Light weight for balanced body text */
     line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.materials-intro strong {
+    font-weight: 700;
+    color: #FF6B4A;
+}
+
+.materials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 22px;
+    font-weight: 400;
     color: #2c2c2c;
 }
 
-.materials-text strong {
-    font-weight: 700;
-    /* Semi Bold for emphasis in body text */
+.materials-list span {
+    white-space: nowrap;
+}
+
+.material-separator {
     color: #FF6B4A;
+    font-size: 16px;
 }
 
 /* ===================================
