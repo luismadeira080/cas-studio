@@ -666,8 +666,7 @@ strong {
 .section-title {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    font-weight: 700;
-    /* Light weight to match team title */
+    font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.5px;
     text-transform: none;
