@@ -833,8 +833,8 @@ strong {
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.5px;
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: left;
+    margin-bottom: 20px;
     color: #2c2c2c;
 }
 
@@ -843,15 +843,28 @@ strong {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
-    text-align: center;
+    text-align: left;
     color: #666;
-    max-width: 800px;
-    margin: 0 auto 80px;
+    max-width: 100%;
+    margin: 0 0 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 60px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.team-content-wrapper {
+    width: 100%;
 }
 
 .team-accordion {
-    max-width: 900px;
-    margin: 0 auto 80px;
+    max-width: 100%;
+    margin: 0;
 }
 
 .team-item {
@@ -916,8 +929,8 @@ strong {
 }
 
 .team-image-container {
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     border-radius: 4px;
     overflow: hidden;
 }
