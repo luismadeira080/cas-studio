@@ -693,58 +693,93 @@ strong {
 }
 
 /* ===================================
-   Detail Section - Triptych Layout
+   Detail Section - Text + Carousel Layout
    =================================== */
 
 .detail-section {
-    padding: 0;
+    padding: 140px 8%;
     background-color: #faf8f5;
+}
+
+.detail-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #2c2c2c;
 }
 
 .detail-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-    min-height: 70vh;
-    align-items: stretch;
+    grid-template-columns: 45% 55%;
+    gap: 60px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.detail-image,
-.detail-image-2 {
+.detail-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #666;
+}
+
+.detail-text p {
+    margin-bottom: 24px;
+    font-weight: 300;
+    color: #666;
+}
+
+.detail-text strong {
+    font-weight: 600;
+    font-size: 22px;
+    color: #FF6B4A;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+/* Carousel Styles */
+.detail-carousel {
+    position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 
-.detail-image img,
-.detail-image-2 img {
+.carousel-track {
+    display: flex;
+    animation: carousel-slide 20s ease-in-out infinite;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 600px;
+}
+
+.carousel-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.detail-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 300; /* Light for detail text */
-    line-height: 1.7;
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-}
-
-.detail-text p {
-    margin-bottom: 20px;
-    font-weight: 300; /* Light weight */
-    color: #666;
-}
-
-.detail-text strong {
-    font-weight: 600; /* Semi Bold for feature labels */
-    font-size: 28px;
-    color: #FF6B4A;
-    display: block;
-    margin-bottom: 10px;
+@keyframes carousel-slide {
+    0%, 30% {
+        transform: translateX(0);
+    }
+    33%, 63% {
+        transform: translateX(-100%);
+    }
+    66%, 96% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* ===================================
@@ -1240,13 +1275,26 @@ strong {
         gap: 40px;
     }
 
+    .detail-section {
+        padding: 100px 6%;
+    }
+
+    .detail-title {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+
     .detail-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .detail-text {
-        padding: 40px;
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .carousel-slide {
+        height: 400px;
     }
 
     .testimonials-section {
