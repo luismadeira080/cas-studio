@@ -634,15 +634,14 @@ strong {
 
 .section-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 13px; /* Reduced size for subtlety - section marker, not hero */
-    font-weight: 500; /* Medium weight for UI-style label */
-    line-height: 1.4;
-    letter-spacing: 3px; /* Increased letter-spacing for elegant, understated presence */
-    text-transform: uppercase; /* Uppercase for clear section delineation */
+    font-size: 42px;
+    font-weight: 600; /* Semi bold for strong presence */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-transform: none;
     text-align: center;
-    margin-bottom: 100px; /* Increased spacing to separate from content */
-    color: #999; /* Lighter color to recede visually */
-    opacity: 0.8; /* Additional subtlety */
+    margin-bottom: 80px;
+    color: #2c2c2c; /* Dark color for prominence */
 }
 
 .testimonial {
@@ -659,12 +658,12 @@ strong {
 }
 
 .testimonial p {
-    font-size: 32px; /* Increased size - testimonials are the star content */
+    font-size: 24px; /* Reduced size to be subordinate to title */
     font-style: italic;
-    font-weight: 400; /* Regular italic maintains readability at larger size */
-    line-height: 1.65; /* Optimized line-height for larger text */
-    margin-bottom: 32px; /* Increased spacing before attribution */
-    color: #FF6B4A; /* Coral accent makes testimonials pop as primary content */
+    font-weight: 400; /* Regular italic maintains readability */
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #666; /* Darker grey for better readability */
     position: relative;
 }
 
@@ -858,13 +857,14 @@ strong {
 
 .faq-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    font-weight: 500; /* Medium for UI section labels */
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 600; /* Semi bold for strong presence */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-transform: none;
     text-align: center;
     margin-bottom: 80px;
-    color: #999;
+    color: #2c2c2c; /* Dark color for prominence */
 }
 
 .faq-grid {
@@ -1322,11 +1322,10 @@ strong {
         padding: 100px 6%;
     }
 
-    /* Maintain hierarchy on tablet - title stays subtle, quotes remain prominent */
-    .section-title {
-        font-size: 12px;
-        letter-spacing: 2.5px;
-        margin-bottom: 80px;
+    .section-title,
+    .faq-title {
+        font-size: 32px;
+        margin-bottom: 60px;
     }
 
     .testimonial {
@@ -1334,9 +1333,9 @@ strong {
     }
 
     .testimonial p {
-        font-size: 26px; /* Scaled down but still larger and more prominent than title */
+        font-size: 20px;
         line-height: 1.6;
-        margin-bottom: 28px;
+        margin-bottom: 20px;
     }
 
     /* Adjust decorative quotation mark for smaller screens */
@@ -1461,11 +1460,10 @@ strong {
         font-size: 14px;
     }
 
-    /* Maintain clear hierarchy even on small mobile */
-    .section-title {
-        font-size: 11px;
-        letter-spacing: 2px;
-        margin-bottom: 60px;
+    .section-title,
+    .faq-title {
+        font-size: 26px;
+        margin-bottom: 40px;
     }
 
     .testimonial {
@@ -1473,9 +1471,9 @@ strong {
     }
 
     .testimonial p {
-        font-size: 22px; /* Still prominent relative to title */
+        font-size: 18px;
         line-height: 1.55;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     /* Simplify decorative element on very small screens */
