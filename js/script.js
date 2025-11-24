@@ -87,7 +87,7 @@ function trackConversion(conversionLabel) {
 
 // Track CTA button clicks
 document.querySelectorAll('.btn-primary').forEach(button => {
-    button.addEventListener('click', function(e) {
+    button.addEventListener('click', function (e) {
         trackConversion('start_project_click');
         // Optional: Send event to analytics
         if (typeof gtag !== 'undefined') {
@@ -137,32 +137,7 @@ document.querySelectorAll('.team-question').forEach(button => {
     });
 });
 
-// Carousel functionality
-const carouselTrack = document.querySelector('.carousel-track');
-const prevButton = document.querySelector('.carousel-arrow-prev');
-const nextButton = document.querySelector('.carousel-arrow-next');
-const slides = document.querySelectorAll('.carousel-slide');
-let currentSlide = 0;
 
-if (carouselTrack && prevButton && nextButton) {
-    function updateCarousel() {
-        const slideWidth = slides[0].offsetWidth;
-        carouselTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-    }
-
-    nextButton.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        updateCarousel();
-    });
-
-    prevButton.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        updateCarousel();
-    });
-
-    // Update on window resize
-    window.addEventListener('resize', updateCarousel);
-}
 
 // Enquiry Form Functionality
 const enquiryForm = document.getElementById('enquiryForm');
@@ -197,7 +172,7 @@ priorityCheckboxes.forEach(checkbox => {
 
 // Form submission handling
 if (enquiryForm) {
-    enquiryForm.addEventListener('submit', function(e) {
+    enquiryForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Collect form data
