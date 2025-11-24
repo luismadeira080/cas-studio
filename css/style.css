@@ -83,10 +83,11 @@ strong {
 }
 
 .logo img {
-    height: 120px;
+    height: 160px;
     width: auto;
     display: block;
     transition: opacity 0.3s ease;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 .logo-white {
@@ -1096,7 +1097,7 @@ strong {
     }
 
     .logo img {
-        height: 100px;
+        height: 120px;
         width: auto;
         object-fit: contain;
     }
