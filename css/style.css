@@ -1568,6 +1568,64 @@ strong {
     .footer {
         padding: 80px 6%;
     }
+
+    /* Team Section Mobile - Stack image and content */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .team-image-container {
+        order: 1;
+    }
+
+    .team-content-wrapper {
+        order: 2;
+    }
+
+    /* Detail Section Mobile - Stack accordion and carousel */
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .detail-accordion-wrapper {
+        order: 1;
+    }
+
+    .detail-carousel {
+        order: 2;
+    }
+
+    /* Luxury Section Mobile - Ensure proper text sizing */
+    .luxury-intro {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .luxury-characteristics p {
+        font-size: 18px;
+    }
+
+    /* Services Narrative Mobile */
+    .services-narrative p {
+        font-size: 16px;
+    }
+
+    /* CTA Section Mobile */
+    .cta-section {
+        padding: 80px 6%;
+    }
+
+    .cta-title {
+        font-size: 36px;
+    }
+
+    .cta-text {
+        font-size: 18px;
+        margin-bottom: 36px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1640,6 +1698,42 @@ strong {
         font-size: 14px;
         margin-bottom: 40px;
     }
+
+    /* Small Mobile - Additional optimizations */
+    .luxury-intro {
+        font-size: 28px;
+    }
+
+    .luxury-characteristics p {
+        font-size: 16px;
+    }
+
+    .services-narrative p {
+        font-size: 14px;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-text {
+        font-size: 16px;
+    }
+
+    .statement-text,
+    .interior-text {
+        font-size: 24px;
+    }
+
+    .materials-text {
+        font-size: 18px;
+    }
+
+    .luxury-text,
+    .tech-text {
+        font-size: 24px;
+    }
+
 
     .team-question {
         font-size: 16px;
