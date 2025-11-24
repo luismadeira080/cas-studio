@@ -130,12 +130,40 @@ document.querySelectorAll('.faq-question').forEach(button => {
 });
 
 // Team Accordion functionality
+// Team Accordion functionality
 document.querySelectorAll('.team-question').forEach(button => {
     button.addEventListener('click', () => {
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
         button.setAttribute('aria-expanded', !isExpanded);
     });
 });
+
+// Carousel functionality
+const carouselTrack = document.querySelector('.carousel-track');
+const prevButton = document.querySelector('.carousel-arrow-prev');
+const nextButton = document.querySelector('.carousel-arrow-next');
+const slides = document.querySelectorAll('.carousel-slide');
+let currentSlide = 0;
+
+if (carouselTrack && prevButton && nextButton) {
+    function updateCarousel() {
+        const slideWidth = slides[0].offsetWidth;
+        carouselTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateCarousel();
+    });
+
+    // Update on window resize
+    window.addEventListener('resize', updateCarousel);
+}
 
 
 
