@@ -560,6 +560,14 @@ strong {
     flex: 1;
 }
 
+.services-narrative {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #2c2c2c;
+}
+
 .services-detailed-list {
     list-style: none;
     padding: 0;
