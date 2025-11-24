@@ -132,6 +132,14 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 });
 
+// Team Accordion functionality
+document.querySelectorAll('.team-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
+    });
+});
+
 // Enquiry Form Functionality
 const enquiryForm = document.getElementById('enquiryForm');
 
