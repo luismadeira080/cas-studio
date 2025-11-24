@@ -634,14 +634,14 @@ strong {
 
 .section-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-    font-weight: 600; /* Semi bold for strong presence */
+    font-size: 48px;
+    font-weight: 300; /* Light weight to match team title */
     line-height: 1.2;
     letter-spacing: -0.5px;
     text-transform: none;
     text-align: center;
     margin-bottom: 80px;
-    color: #2c2c2c; /* Dark color for prominence */
+    color: #2c2c2c;
 }
 
 .testimonial {
@@ -752,7 +752,7 @@ strong {
 
 .carousel-track {
     display: flex;
-    animation: carousel-slide 20s ease-in-out infinite;
+    transition: transform 0.5s ease;
 }
 
 .carousel-slide {
@@ -766,19 +766,36 @@ strong {
     object-fit: cover;
 }
 
-@keyframes carousel-slide {
-    0%, 30% {
-        transform: translateX(0);
-    }
-    33%, 63% {
-        transform: translateX(-100%);
-    }
-    66%, 96% {
-        transform: translateX(-200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #2c2c2c;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background: rgba(255, 107, 74, 0.9);
+    color: #fff;
+}
+
+.carousel-arrow-prev {
+    left: 20px;
+}
+
+.carousel-arrow-next {
+    right: 20px;
 }
 
 /* ===================================
@@ -904,14 +921,14 @@ strong {
 
 .faq-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-    font-weight: 600; /* Semi bold for strong presence */
+    font-size: 48px;
+    font-weight: 300; /* Light weight to match team title */
     line-height: 1.2;
     letter-spacing: -0.5px;
     text-transform: none;
     text-align: center;
     margin-bottom: 80px;
-    color: #2c2c2c; /* Dark color for prominence */
+    color: #2c2c2c;
 }
 
 .faq-grid {
@@ -1380,7 +1397,7 @@ strong {
 
     .section-title,
     .faq-title {
-        font-size: 32px;
+        font-size: 36px;
         margin-bottom: 60px;
     }
 
@@ -1528,7 +1545,7 @@ strong {
 
     .section-title,
     .faq-title {
-        font-size: 26px;
+        font-size: 28px;
         margin-bottom: 40px;
     }
 
