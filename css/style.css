@@ -633,14 +633,14 @@ strong {
 
 .section-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    font-weight: 500; /* Medium for UI section labels */
-    line-height: 1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 300; /* Light weight for elegant heading */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-transform: none;
     text-align: center;
     margin-bottom: 80px;
-    color: #999;
+    color: #2c2c2c;
 }
 
 .testimonial {
