@@ -19,7 +19,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 400; /* Regular weight for body text */
+    font-weight: 400;
+    /* Regular weight for body text */
     line-height: 1.8;
     color: #2c2c2c;
     background-color: #faf8f5;
@@ -38,7 +39,8 @@ a {
 }
 
 strong {
-    font-weight: 700; /* Bold for strong emphasis */
+    font-weight: 700;
+    /* Bold for strong emphasis */
 }
 
 /* Remove all max-width containers for full-bleed design */
@@ -118,7 +120,8 @@ strong {
     gap: 50px;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
-    font-weight: 500; /* Medium weight for navigation clarity */
+    font-weight: 500;
+    /* Medium weight for navigation clarity */
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #2c2c2c;
@@ -159,7 +162,8 @@ strong {
     padding: 16px 32px;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
-    font-weight: 500; /* Medium weight for button text */
+    font-weight: 500;
+    /* Medium weight for button text */
     letter-spacing: 2px;
     text-transform: uppercase;
     border: 1px solid #2c2c2c;
@@ -230,7 +234,7 @@ strong {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 .hero-content {
@@ -248,7 +252,8 @@ strong {
 .hero-title {
     font-family: 'Roboto', sans-serif;
     font-size: 72px;
-    font-weight: 300; /* Light weight for better visibility */
+    font-weight: 700;
+    /* Light weight for better visibility */
     line-height: 1.1;
     margin-bottom: 24px;
     letter-spacing: -1px;
@@ -258,7 +263,8 @@ strong {
 .hero-subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    font-weight: 300; /* Light weight for better visibility */
+    font-weight: 400;
+    /* Light weight for better visibility */
     line-height: 1.4;
     margin-bottom: 20px;
     max-width: 600px;
@@ -267,7 +273,8 @@ strong {
 .hero-text {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 300; /* Light weight for better visibility */
+    font-weight: 400;
+    /* Light weight for better visibility */
     line-height: 1.6;
     font-style: italic;
     max-width: 500px;
@@ -311,18 +318,20 @@ strong {
 .interior-text,
 .statement-text {
     font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-    font-weight: 300; /* Light weight for large, airy editorial text */
+    font-size: 48px;
+    font-weight: 300;
+    /* Light weight for large, airy editorial text */
     line-height: 1.3;
     padding: 10%;
     text-align: left;
-    color: #FF6B4A;
+    color: #2c2c2c;
 }
 
 .statement-text {
     background-color: #fff;
-    font-size: 52px;
-    font-weight: 200; /* Extra Light for the large statement */
+    font-size: 48px;
+    font-weight: 300;
+    /* Extra Light for the large statement */
     letter-spacing: -1px;
 }
 
@@ -333,7 +342,8 @@ strong {
 
 .interior-text strong,
 .statement-text strong {
-    font-weight: 300; /* Light for emphasis within large text */
+    font-weight: 300;
+    /* Light for emphasis within large text */
     display: block;
 }
 
@@ -374,7 +384,8 @@ strong {
 .materials-text {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    font-weight: 300; /* Light weight for balanced body text */
+    font-weight: 400;
+    /* Light weight for balanced body text */
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto;
@@ -382,7 +393,8 @@ strong {
 }
 
 .materials-text strong {
-    font-weight: 600; /* Semi Bold for emphasis in body text */
+    font-weight: 700;
+    /* Semi Bold for emphasis in body text */
     color: #FF6B4A;
 }
 
@@ -405,17 +417,19 @@ strong {
 
 .luxury-text {
     font-family: 'Roboto', sans-serif;
-    font-size: 52px;
-    font-weight: 200; /* Extra Light for the large statement */
+    font-size: 48px;
+    font-weight: 300;
+    /* Extra Light for the large statement */
     line-height: 1.3;
     padding: 10%;
-    color: #FF6B4A;
+    color: #2c2c2c;
     letter-spacing: -1px;
 }
 
 .luxury-text strong {
-    font-weight: 200; /* Keep same weight as parent */
-    color: #FF6B4A;
+    font-weight: 300;
+    /* Keep same weight as parent */
+    color: #2c2c2c;
 }
 
 .luxury-image {
@@ -459,17 +473,19 @@ strong {
 
 .tech-text {
     font-family: 'Roboto', sans-serif;
-    font-size: 52px;
-    font-weight: 200; /* Extra Light for the large statement */
+    font-size: 48px;
+    font-weight: 300;
+    /* Extra Light for the large statement */
     line-height: 1.3;
     padding: 10%;
-    color: #FF6B4A;
+    color: #2c2c2c;
     letter-spacing: -1px;
 }
 
 .tech-text strong {
-    font-weight: 200; /* Keep same weight as parent */
-    color: #FF6B4A;
+    font-weight: 300;
+    /* Keep same weight as parent */
+    color: #2c2c2c;
 }
 
 /* ===================================
@@ -484,7 +500,8 @@ strong {
 .services-statement {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    font-weight: 300; /* Light for spacious, editorial feel */
+    font-weight: 400;
+    /* Light for spacious, editorial feel */
     line-height: 1.6;
     text-align: center;
     margin-bottom: 80px;
@@ -495,14 +512,16 @@ strong {
 }
 
 .services-statement strong {
-    font-weight: 600; /* Semi Bold for emphasis */
+    font-weight: 700;
+    /* Semi Bold for emphasis */
     color: #FF6B4A;
 }
 
 .services-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 38px;
-    font-weight: 300; /* Light for large section heading */
+    font-size: 48px;
+    font-weight: 700;
+    /* Light for large section heading */
     line-height: 1.5;
     text-align: center;
     margin-bottom: 100px;
@@ -550,7 +569,8 @@ strong {
 .services-detailed-list li {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    font-weight: 300; /* Light for clean readability */
+    font-weight: 400;
+    /* Light for clean readability */
     line-height: 1.8;
     color: #2c2c2c;
     margin-bottom: 20px;
@@ -596,7 +616,8 @@ strong {
 .services-list {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 300; /* Light for list items */
+    font-weight: 400;
+    /* Light for list items */
     line-height: 2.2;
     padding: 40px;
     display: flex;
@@ -610,12 +631,14 @@ strong {
 
 .services-list li {
     margin-bottom: 30px;
-    font-weight: 300; /* Light weight for airy list appearance */
+    font-weight: 300;
+    /* Light weight for airy list appearance */
     color: #666;
 }
 
 .services-list strong {
-    font-weight: 700; /* Bold for service labels */
+    font-weight: 700;
+    /* Bold for service labels */
     font-size: 16px;
     color: #2c2c2c;
     text-transform: uppercase;
@@ -635,7 +658,8 @@ strong {
 .section-title {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    font-weight: 300; /* Light weight to match team title */
+    font-weight: 700;
+    /* Light weight to match team title */
     line-height: 1.2;
     letter-spacing: -0.5px;
     text-transform: none;
@@ -645,11 +669,14 @@ strong {
 }
 
 .testimonial {
-    max-width: 800px; /* Slightly narrower for better readability */
-    margin: 0 auto 100px; /* Increased bottom margin for clear separation */
+    max-width: 800px;
+    /* Slightly narrower for better readability */
+    margin: 0 auto 100px;
+    /* Increased bottom margin for clear separation */
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    position: relative; /* For decorative quotation marks */
+    position: relative;
+    /* For decorative quotation marks */
 }
 
 /* Last testimonial has less bottom margin */
@@ -658,37 +685,49 @@ strong {
 }
 
 .testimonial p {
-    font-size: 24px; /* Reduced size to be subordinate to title */
+    font-size: 24px;
+    /* Reduced size to be subordinate to title */
     font-style: italic;
-    font-weight: 400; /* Regular italic maintains readability */
+    font-weight: 400;
+    /* Regular italic maintains readability */
     line-height: 1.6;
     margin-bottom: 24px;
-    color: #666; /* Darker grey for better readability */
+    color: #666;
+    /* Darker grey for better readability */
     position: relative;
 }
 
 /* Decorative opening quotation mark */
 .testimonial p::before {
-    content: '\201C'; /* Left double quotation mark */
+    content: '\201C';
+    /* Left double quotation mark */
     position: absolute;
     top: -20px;
     left: -40px;
     font-size: 72px;
     font-style: normal;
     color: #FF6B4A;
-    opacity: 0.15; /* Very subtle decorative element */
+    opacity: 0.15;
+    /* Very subtle decorative element */
     line-height: 1;
 }
 
 .testimonial cite {
-    display: block; /* Ensures proper spacing */
-    font-size: 13px; /* Slightly smaller for clear subordination */
-    font-weight: 400; /* Regular weight instead of light for better readability */
+    display: block;
+    /* Ensures proper spacing */
+    font-size: 13px;
+    /* Slightly smaller for clear subordination */
+    font-weight: 400;
+    /* Regular weight instead of light for better readability */
     font-style: normal;
-    color: #666; /* Darker than before but still clearly secondary */
-    letter-spacing: 1.5px; /* Increased letter-spacing for refined appearance */
-    text-transform: uppercase; /* Matches section title treatment */
-    margin-top: 8px; /* Additional separation from quote */
+    color: #666;
+    /* Darker than before but still clearly secondary */
+    letter-spacing: 1.5px;
+    /* Increased letter-spacing for refined appearance */
+    text-transform: uppercase;
+    /* Matches section title treatment */
+    margin-top: 8px;
+    /* Additional separation from quote */
 }
 
 /* ===================================
@@ -703,7 +742,7 @@ strong {
 .detail-title {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.5px;
     text-align: center;
@@ -723,7 +762,7 @@ strong {
 .detail-text {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8;
     color: #666;
 }
@@ -735,7 +774,7 @@ strong {
 }
 
 .detail-text strong {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 22px;
     color: #FF6B4A;
     display: block;
@@ -890,7 +929,7 @@ strong {
     font-weight: 500;
 }
 
-.team-question[aria-expanded="true"] + .team-answer {
+.team-question[aria-expanded="true"]+.team-answer {
     max-height: 500px;
     padding-bottom: 32px;
 }
@@ -922,7 +961,8 @@ strong {
 .faq-title {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    font-weight: 300; /* Light weight to match team title */
+    font-weight: 300;
+    /* Light weight to match team title */
     line-height: 1.2;
     letter-spacing: -0.5px;
     text-transform: none;
@@ -952,7 +992,8 @@ strong {
     align-items: flex-start;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 400; /* Regular for question text */
+    font-weight: 400;
+    /* Regular for question text */
     line-height: 1.5;
     margin-bottom: 0;
     padding: 0 0 16px 0;
@@ -997,7 +1038,8 @@ strong {
 .faq-answer-content {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 300; /* Light for answer text */
+    font-weight: 300;
+    /* Light for answer text */
     line-height: 1.8;
     color: #666;
     padding-top: 20px;
@@ -1024,7 +1066,8 @@ strong {
 .enquiry-title {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    font-weight: 200; /* Extra Light for elegant heading */
+    font-weight: 200;
+    /* Extra Light for elegant heading */
     line-height: 1.2;
     margin-bottom: 20px;
     color: #2c2c2c;
@@ -1033,7 +1076,8 @@ strong {
 .enquiry-subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 300; /* Light for subtitle */
+    font-weight: 300;
+    /* Light for subtitle */
     font-style: italic;
     color: #666;
 }
@@ -1058,7 +1102,8 @@ strong {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 500; /* Medium for labels */
+    font-weight: 500;
+    /* Medium for labels */
     margin-bottom: 12px;
     color: #2c2c2c;
     letter-spacing: 0.5px;
@@ -1067,7 +1112,8 @@ strong {
 .field-description {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 300; /* Light for descriptions */
+    font-weight: 300;
+    /* Light for descriptions */
     color: #666;
     margin-top: -8px;
     margin-bottom: 16px;
@@ -1081,7 +1127,8 @@ strong {
     padding: 14px 16px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 300; /* Light for input text */
+    font-weight: 300;
+    /* Light for input text */
     color: #2c2c2c;
     background-color: #faf8f5;
     border: 1px solid #e0e0e0;
@@ -1137,7 +1184,8 @@ strong {
 .checkbox-option label {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 300; /* Light for option labels */
+    font-weight: 300;
+    /* Light for option labels */
     color: #2c2c2c;
     cursor: pointer;
     margin-bottom: 0;
@@ -1160,7 +1208,8 @@ strong {
 .form-checkbox label {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 300; /* Light */
+    font-weight: 300;
+    /* Light */
     color: #666;
     cursor: pointer;
     margin-bottom: 0;
@@ -1189,7 +1238,8 @@ strong {
 .footer-text {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    font-weight: 300; /* Light */
+    font-weight: 300;
+    /* Light */
     color: #999;
     letter-spacing: 1px;
 }
@@ -1564,7 +1614,8 @@ strong {
         font-size: 48px;
         top: -12px;
         left: -20px;
-        opacity: 0.1; /* Even more subtle on mobile */
+        opacity: 0.1;
+        /* Even more subtle on mobile */
     }
 
     .testimonial cite {
@@ -1580,4 +1631,55 @@ strong {
         padding: 16px 32px;
         font-size: 11px;
     }
+}
+
+/* ===================================
+   Animations
+   =================================== */
+
+section:not(.hero) {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-content {
+    animation: fadeUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s;
+}
+
+.reveal-text.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scale-in.in-view {
+    opacity: 1;
+    transform: scale(1);
 }
