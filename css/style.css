@@ -229,7 +229,7 @@ strong {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.8) 100%);
 }
 
 .hero-content {
@@ -247,7 +247,7 @@ strong {
 .hero-title {
     font-family: 'Roboto', sans-serif;
     font-size: 72px;
-    font-weight: 100; /* Thin weight for dramatic, elegant hero title */
+    font-weight: 300; /* Light weight for better visibility */
     line-height: 1.1;
     margin-bottom: 24px;
     letter-spacing: -1px;
@@ -257,7 +257,7 @@ strong {
 .hero-subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    font-weight: 200; /* Extra Light for airy subtitle */
+    font-weight: 300; /* Light weight for better visibility */
     line-height: 1.4;
     margin-bottom: 20px;
     max-width: 600px;
@@ -266,11 +266,11 @@ strong {
 .hero-text {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 100; /* Thin italic for decorative tagline */
+    font-weight: 300; /* Light weight for better visibility */
     line-height: 1.6;
     font-style: italic;
     max-width: 500px;
-    opacity: 0.95;
+    opacity: 1;
 }
 
 /* ===================================
