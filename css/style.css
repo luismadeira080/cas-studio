@@ -624,6 +624,7 @@ strong {
 
 /* ===================================
    Testimonials Section
+   Visual hierarchy: Subtle title → Prominent quotes → Subtle attribution
    =================================== */
 
 .testimonials-section {
@@ -633,38 +634,62 @@ strong {
 
 .section-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 300; /* Light weight for elegant heading */
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-    text-transform: none;
+    font-size: 13px; /* Reduced size for subtlety - section marker, not hero */
+    font-weight: 500; /* Medium weight for UI-style label */
+    line-height: 1.4;
+    letter-spacing: 3px; /* Increased letter-spacing for elegant, understated presence */
+    text-transform: uppercase; /* Uppercase for clear section delineation */
     text-align: center;
-    margin-bottom: 80px;
-    color: #2c2c2c;
+    margin-bottom: 100px; /* Increased spacing to separate from content */
+    color: #999; /* Lighter color to recede visually */
+    opacity: 0.8; /* Additional subtlety */
 }
 
 .testimonial {
-    max-width: 900px;
-    margin: 0 auto 80px;
+    max-width: 800px; /* Slightly narrower for better readability */
+    margin: 0 auto 100px; /* Increased bottom margin for clear separation */
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    position: relative; /* For decorative quotation marks */
+}
+
+/* Last testimonial has less bottom margin */
+.testimonial:last-of-type {
+    margin-bottom: 0;
 }
 
 .testimonial p {
-    font-size: 28px;
+    font-size: 32px; /* Increased size - testimonials are the star content */
     font-style: italic;
-    font-weight: 400; /* Regular italic for testimonial quotes */
-    line-height: 1.6;
-    margin-bottom: 24px;
-    color: #2c2c2c;
+    font-weight: 400; /* Regular italic maintains readability at larger size */
+    line-height: 1.65; /* Optimized line-height for larger text */
+    margin-bottom: 32px; /* Increased spacing before attribution */
+    color: #FF6B4A; /* Coral accent makes testimonials pop as primary content */
+    position: relative;
+}
+
+/* Decorative opening quotation mark */
+.testimonial p::before {
+    content: '\201C'; /* Left double quotation mark */
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    font-size: 72px;
+    font-style: normal;
+    color: #FF6B4A;
+    opacity: 0.15; /* Very subtle decorative element */
+    line-height: 1;
 }
 
 .testimonial cite {
-    font-size: 14px;
-    font-weight: 300; /* Light for attribution text */
+    display: block; /* Ensures proper spacing */
+    font-size: 13px; /* Slightly smaller for clear subordination */
+    font-weight: 400; /* Regular weight instead of light for better readability */
     font-style: normal;
-    color: #999;
-    letter-spacing: 1px;
+    color: #666; /* Darker than before but still clearly secondary */
+    letter-spacing: 1.5px; /* Increased letter-spacing for refined appearance */
+    text-transform: uppercase; /* Matches section title treatment */
+    margin-top: 8px; /* Additional separation from quote */
 }
 
 /* ===================================
@@ -1228,8 +1253,33 @@ strong {
         padding: 100px 6%;
     }
 
+    /* Maintain hierarchy on tablet - title stays subtle, quotes remain prominent */
+    .section-title {
+        font-size: 12px;
+        letter-spacing: 2.5px;
+        margin-bottom: 80px;
+    }
+
+    .testimonial {
+        margin-bottom: 80px;
+    }
+
     .testimonial p {
-        font-size: 22px;
+        font-size: 26px; /* Scaled down but still larger and more prominent than title */
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+    /* Adjust decorative quotation mark for smaller screens */
+    .testimonial p::before {
+        font-size: 60px;
+        top: -16px;
+        left: -30px;
+    }
+
+    .testimonial cite {
+        font-size: 12px;
+        letter-spacing: 1.2px;
     }
 
     .faq-section {
@@ -1337,8 +1387,34 @@ strong {
         font-size: 14px;
     }
 
+    /* Maintain clear hierarchy even on small mobile */
+    .section-title {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 60px;
+    }
+
+    .testimonial {
+        margin-bottom: 60px;
+    }
+
     .testimonial p {
-        font-size: 20px;
+        font-size: 22px; /* Still prominent relative to title */
+        line-height: 1.55;
+        margin-bottom: 24px;
+    }
+
+    /* Simplify decorative element on very small screens */
+    .testimonial p::before {
+        font-size: 48px;
+        top: -12px;
+        left: -20px;
+        opacity: 0.1; /* Even more subtle on mobile */
+    }
+
+    .testimonial cite {
+        font-size: 11px;
+        letter-spacing: 1px;
     }
 
     .faq-question {
