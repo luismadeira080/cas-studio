@@ -251,9 +251,9 @@ strong {
 
 .hero-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 72px;
-    font-weight: 700;
-    /* Light weight for better visibility */
+    font-size: 84px;
+    font-weight: 500;
+    /* Medium weight for better visibility */
     line-height: 1.1;
     margin-bottom: 24px;
     letter-spacing: -1px;
@@ -262,7 +262,7 @@ strong {
 
 .hero-subtitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
     /* Light weight for better visibility */
     line-height: 1.4;
@@ -1334,11 +1334,11 @@ strong {
 
 @media screen and (max-width: 1024px) {
     .hero-title {
-        font-size: 56px;
+        font-size: 64px;
     }
 
     .hero-subtitle {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .statement-text {
@@ -1396,11 +1396,11 @@ strong {
     }
 
     .hero-title {
-        font-size: 42px;
+        font-size: 48px;
     }
 
     .hero-subtitle {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .hero-text {
@@ -1705,11 +1705,11 @@ strong {
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .hero-subtitle {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .team-title {
