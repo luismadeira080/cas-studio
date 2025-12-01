@@ -252,8 +252,8 @@ strong {
 .hero-title {
     font-family: 'Roboto', sans-serif;
     font-size: 84px;
-    font-weight: 400;
-    /* Regular weight for refined, airy look */
+    font-weight: 300;
+    /* Light weight for refined, airy look */
     line-height: 1.1;
     margin-bottom: 24px;
     letter-spacing: -1px;
@@ -273,7 +273,7 @@ strong {
 .hero-text {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     /* Light weight for better visibility */
     line-height: 1.6;
     font-style: italic;
