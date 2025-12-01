@@ -795,6 +795,7 @@ strong {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: 0;
 }
 
 .detail-accordion-wrapper .team-accordion {
@@ -874,20 +875,9 @@ strong {
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.5px;
-    text-align: left;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 80px;
     color: #2c2c2c;
-}
-
-.team-intro {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
-    text-align: left;
-    color: #666;
-    max-width: 100%;
-    margin: 0 0 40px;
 }
 
 .team-grid {
@@ -897,6 +887,7 @@ strong {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: 0;
 }
 
 .team-content-wrapper {
@@ -1449,11 +1440,6 @@ strong {
 
     .team-title {
         font-size: 36px;
-        margin-bottom: 30px;
-    }
-
-    .team-intro {
-        font-size: 16px;
         margin-bottom: 60px;
     }
 
@@ -1714,11 +1700,6 @@ strong {
 
     .team-title {
         font-size: 28px;
-        margin-bottom: 24px;
-    }
-
-    .team-intro {
-        font-size: 14px;
         margin-bottom: 40px;
     }
 
