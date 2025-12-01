@@ -917,7 +917,7 @@ strong {
     font-weight: 500;
     color: #2c2c2c;
     text-align: left;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .team-question:hover {
@@ -928,7 +928,7 @@ strong {
     font-size: 32px;
     font-weight: 300;
     color: #FF6B4A;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-question[aria-expanded="true"] .team-icon {
@@ -938,7 +938,8 @@ strong {
 .team-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), padding 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+    opacity: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -958,6 +959,7 @@ strong {
 .team-question[aria-expanded="true"]+.team-answer {
     max-height: 500px;
     padding-bottom: 32px;
+    opacity: 1;
 }
 
 .team-image-container {
@@ -1008,7 +1010,7 @@ strong {
 .faq-item {
     border: none;
     padding: 0;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .faq-question {
@@ -1029,7 +1031,7 @@ strong {
     border-bottom: 1px solid #e0e0e0;
     cursor: pointer;
     text-align: left;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .faq-question:hover {
@@ -1046,7 +1048,7 @@ strong {
     font-size: 24px;
     font-weight: 300;
     line-height: 1;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
     color: #FF6B4A;
 }
@@ -1058,7 +1060,8 @@ strong {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+    opacity: 0;
 }
 
 .faq-answer-content {
@@ -1073,6 +1076,7 @@ strong {
 
 .faq-item.active .faq-answer {
     max-height: 500px;
+    opacity: 1;
 }
 
 /* ===================================
