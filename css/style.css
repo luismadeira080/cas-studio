@@ -534,10 +534,11 @@ strong {
 
 .services-statement {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    /* Light for spacious, editorial feel */
-    line-height: 1.6;
+    font-size: 48px;
+    font-weight: 300;
+    /* Light weight to match other section titles */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
     text-align: center;
     margin-bottom: 80px;
     max-width: 900px;
@@ -547,9 +548,9 @@ strong {
 }
 
 .services-statement strong {
-    font-weight: 700;
-    /* Semi Bold for emphasis */
-    color: #FF6B4A;
+    font-weight: 300;
+    /* Keep same light weight for consistency */
+    color: #2c2c2c;
 }
 
 .services-title {
@@ -1469,7 +1470,7 @@ strong {
     }
 
     .services-statement {
-        font-size: 22px;
+        font-size: 36px;
         margin-bottom: 60px;
     }
 
@@ -1765,7 +1766,7 @@ strong {
     }
 
     .services-statement {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .services-detailed-list li {
