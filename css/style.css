@@ -603,7 +603,7 @@ strong {
 
 .services-narrative p {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.6;
     color: #666;
@@ -1622,7 +1622,7 @@ strong {
 
     /* Services Narrative Mobile */
     .services-narrative p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     /* CTA Section Mobile */
@@ -1717,7 +1717,7 @@ strong {
     }
 
     .services-narrative p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .cta-title {
