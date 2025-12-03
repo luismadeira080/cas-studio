@@ -1358,6 +1358,7 @@ strong {
 
     .hero-title {
         font-size: 48px;
+        white-space: normal;
     }
 
     .hero-subtitle {
@@ -1402,6 +1403,42 @@ strong {
     .luxury-grid,
     .tech-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Luxury Section Mobile - Image first, then text */
+    .luxury-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .luxury-image {
+        order: 1;
+    }
+
+    .luxury-text {
+        order: 2;
+    }
+
+    /* Interior Section Mobile - Logical order */
+    .interior-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interior-image {
+        order: 1;
+    }
+
+    .statement-text {
+        order: 2;
+    }
+
+    .interior-text {
+        order: 3;
+    }
+
+    .exterior-image {
+        order: 4;
     }
 
     .team-section {
