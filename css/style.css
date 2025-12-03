@@ -618,11 +618,11 @@ strong {
 
 .services-list li {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
     color: #666;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     padding-left: 30px;
     position: relative;
 }
