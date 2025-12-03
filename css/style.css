@@ -558,6 +558,10 @@ strong {
     color: #2c2c2c;
 }
 
+.services-highlight {
+    color: #FF6B4A;
+}
+
 .services-statement strong {
     font-weight: 300;
     /* Keep same light weight for consistency */
