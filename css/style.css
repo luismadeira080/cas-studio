@@ -713,20 +713,7 @@ strong {
     position: relative;
 }
 
-/* Decorative opening quotation mark */
-.testimonial p::before {
-    content: '\201C';
-    /* Left double quotation mark */
-    position: absolute;
-    top: -20px;
-    left: -40px;
-    font-size: 72px;
-    font-style: normal;
-    color: #FF6B4A;
-    opacity: 0.15;
-    /* Very subtle decorative element */
-    line-height: 1;
-}
+/* Decorative opening quotation mark - removed */
 
 .testimonial cite {
     display: block;
