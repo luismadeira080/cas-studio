@@ -1331,6 +1331,11 @@ strong {
     .luxury-text,
     .tech-text {
         font-size: 42px;
+        padding: 60px 6%;
+    }
+
+    .tech-image {
+        min-height: 60vh;
     }
 }
 
@@ -1404,8 +1409,11 @@ strong {
     .statement-text,
     .interior-text {
         font-size: 32px;
-        padding: 60px 6%;
-        min-height: 40vh;
+        padding: 50px 6%;
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .materials-section {
@@ -1483,9 +1491,12 @@ strong {
     }
 
     .luxury-image,
-    .tech-image,
     .team-image {
         min-height: 50vh;
+    }
+
+    .tech-image {
+        min-height: 60vh;
     }
 
     .services-section {
@@ -1777,8 +1788,11 @@ strong {
     .statement-text,
     .interior-text {
         font-size: 24px;
-        padding: 40px 5%;
-        min-height: 35vh;
+        padding: 30px 5%;
+        min-height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .materials-text {
@@ -1788,6 +1802,8 @@ strong {
     .luxury-text,
     .tech-text {
         font-size: 24px;
+        padding: 40px 5%;
+        min-height: auto;
     }
 
 
