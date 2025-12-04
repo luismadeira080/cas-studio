@@ -1498,6 +1498,10 @@ strong {
     .tech-text {
         font-size: 32px;
         padding: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40vh;
     }
 
     .luxury-image,
@@ -1817,7 +1821,10 @@ strong {
     .tech-text {
         font-size: 24px;
         padding: 40px 5%;
-        min-height: auto;
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
