@@ -1830,7 +1830,7 @@ strong {
 section:not(.hero) {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
     will-change: opacity, transform;
 }
 
@@ -1866,7 +1866,7 @@ section.in-view {
 .scale-in {
     opacity: 0;
     transform: scale(0.95);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
 .scale-in.in-view {
