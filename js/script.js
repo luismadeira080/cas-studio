@@ -201,26 +201,7 @@ priorityCheckboxes.forEach(checkbox => {
 // Form submission handling
 if (enquiryForm) {
     enquiryForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        // Collect form data
-        const formData = new FormData(enquiryForm);
-        const data = {};
-
-        // Convert FormData to object
-        for (let [key, value] of formData.entries()) {
-            if (key === 'priorities') {
-                if (!data[key]) data[key] = [];
-                data[key].push(value);
-            } else {
-                data[key] = value;
-            }
-        }
-
-        // Log form data (replace with actual submission logic)
-        console.log('Form submitted:', data);
-
-        // Track conversion
+        // Track conversion before form submits
         trackConversion('enquiry_form_submit');
 
         // Optional: Send to Google Analytics
@@ -231,14 +212,6 @@ if (enquiryForm) {
             });
         }
 
-        // Show success message
-        alert('Thank you for your enquiry! We will be in touch soon.');
-
-        // Reset form
-        enquiryForm.reset();
-        otherProjectDesc.classList.remove('active');
-
-        // TODO: Replace with actual form submission to your backend or email service
-        // Example: fetch('/api/submit-enquiry', { method: 'POST', body: JSON.stringify(data) })
+        // Allow form to submit naturally to Formspree
     });
 }
