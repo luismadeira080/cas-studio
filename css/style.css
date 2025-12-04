@@ -1342,7 +1342,7 @@ strong {
     }
 
     .tech-image {
-        min-height: 60vh;
+        min-height: 50vh;
     }
 }
 
@@ -1413,7 +1413,7 @@ strong {
     }
 
     .interior-image {
-        min-height: 35vh;
+        min-height: 30vh;
     }
 
     .statement-text,
@@ -1771,7 +1771,11 @@ strong {
     }
 
     .interior-image {
-        min-height: 50vh;
+        min-height: 40vh;
+    }
+
+    .tech-image {
+        min-height: 45vh;
     }
 
     .team-title {
