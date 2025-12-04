@@ -304,7 +304,6 @@ strong {
     min-height: auto;
 }
 
-.interior-image,
 .statement-text,
 .interior-text,
 .exterior-image {
@@ -312,6 +311,13 @@ strong {
     align-items: center;
     justify-content: center;
     min-height: 60vh;
+}
+
+.interior-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45vh;
 }
 
 .interior-image img {
@@ -1393,11 +1399,14 @@ strong {
         grid-template-rows: auto;
     }
 
-    .interior-image,
     .statement-text,
     .interior-text,
     .exterior-image {
         min-height: 50vh;
+    }
+
+    .interior-image {
+        min-height: 35vh;
     }
 
     .statement-text,
