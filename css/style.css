@@ -1355,11 +1355,11 @@ strong {
     }
 
     .hero {
-        min-height: 600px;
+        min-height: 650px;
     }
 
     .hero-content {
-        padding: 0 6% 10%;
+        padding: 0 6% 12%;
     }
 
     .hero-title {
@@ -1699,12 +1699,26 @@ strong {
         gap: 6px;
     }
 
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding: 0 5% 15%;
+    }
+
     .hero-title {
         font-size: 36px;
+        margin-bottom: 12px;
     }
 
     .hero-subtitle {
         font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .hero-text {
+        font-size: 14px;
     }
 
     .team-title {
