@@ -314,7 +314,13 @@ strong {
     min-height: 60vh;
 }
 
-.interior-image img,
+.interior-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
 .exterior-image img {
     width: 100%;
     height: 100%;
