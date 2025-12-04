@@ -1072,6 +1072,7 @@ strong {
     letter-spacing: -1px;
     color: #fff;
     margin-bottom: 24px;
+    white-space: nowrap;
 }
 
 .cta-text {
