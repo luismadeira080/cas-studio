@@ -534,6 +534,13 @@ strong {
     object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+    .tech-image img {
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
 .tech-text {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
