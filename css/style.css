@@ -1754,6 +1754,10 @@ strong {
         font-size: 14px;
     }
 
+    .interior-image {
+        min-height: 50vh;
+    }
+
     .team-title {
         font-size: 28px;
         margin-bottom: 40px;
