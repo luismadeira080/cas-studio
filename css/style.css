@@ -663,9 +663,10 @@ strong {
     content: '•';
     position: absolute;
     left: 0;
+    top: 0;
     color: #FF6B4A;
     font-size: 28px;
-    line-height: 1.6;
+    line-height: 1;
 }
 
 
