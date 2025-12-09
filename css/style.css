@@ -1130,7 +1130,88 @@ strong {
     color: #FF6B4A;
     border-color: #fff;
 }
+/* ===================================
+   Cookie Banner
+   =================================== */
 
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(44, 44, 44, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    z-index: 9999;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cookie-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+    flex: 1;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.cookie-btn {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.cookie-accept {
+    background-color: #FF6B4A;
+    color: #fff;
+    border-color: #FF6B4A;
+}
+
+.cookie-accept:hover {
+    background-color: #fff;
+    color: #FF6B4A;
+    border-color: #fff;
+}
+
+.cookie-decline {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.cookie-decline:hover {
+    background-color: #fff;
+    color: #2c2c2c;
+    border-color: #fff;
+}
 
 /* ===================================
    Enquiry Form Section
@@ -1994,6 +2075,29 @@ strong {
 
     .btn-large {
         padding: 16px 32px;
+        font-size: 11px;
+    }
+
+    /* Cookie Banner Mobile */
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .cookie-text {
+        font-size: 13px;
+    }
+
+    .cookie-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cookie-btn {
+        width: 100%;
+        padding: 14px 20px;
         font-size: 11px;
     }
 }

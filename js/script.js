@@ -215,3 +215,54 @@ if (enquiryForm) {
         // Allow form to submit naturally to Formspree
     });
 }
+
+// Cookie Banner Functionality
+const cookieBanner = document.getElementById('cookieBanner');
+const acceptCookiesBtn = document.getElementById('acceptCookies');
+const declineCookiesBtn = document.getElementById('declineCookies');
+
+// Check if user has already made a choice
+function checkCookieConsent() {
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+        // Show banner after a short delay for better UX
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 1000);
+    }
+}
+
+// Accept cookies
+if (acceptCookiesBtn) {
+    acceptCookiesBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'accepted');
+        cookieBanner.classList.remove('show');
+
+        // Optional: Enable tracking scripts here
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'cookie_consent', {
+                'event_category': 'Cookie',
+                'event_label': 'Accepted'
+            });
+        }
+    });
+}
+
+// Decline cookies
+if (declineCookiesBtn) {
+    declineCookiesBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'declined');
+        cookieBanner.classList.remove('show');
+
+        // Optional: Disable tracking scripts here
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'cookie_consent', {
+                'event_category': 'Cookie',
+                'event_label': 'Declined'
+            });
+        }
+    });
+}
+
+// Initialize cookie banner check on page load
+checkCookieConsent();
