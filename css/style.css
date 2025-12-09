@@ -1142,6 +1142,67 @@ strong {
 }
 
 /* ===================================
+   Thank You Page
+   =================================== */
+
+.thank-you-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 8%;
+    background-color: #faf8f5;
+}
+
+.thank-you-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thank-you-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #FF6B4A;
+    color: #fff;
+    font-size: 48px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+    animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.thank-you-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: #2c2c2c;
+    margin-bottom: 30px;
+}
+
+.thank-you-message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 48px;
+}
+
+/* ===================================
    Cookie Banner
    =================================== */
 
@@ -1857,6 +1918,30 @@ strong {
         margin-top: 18px;
     }
 
+    /* Thank You Page Mobile */
+    .thank-you-section {
+        padding: 100px 6%;
+        min-height: 70vh;
+    }
+
+    .thank-you-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 36px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .thank-you-title {
+        font-size: 42px;
+        margin-bottom: 24px;
+    }
+
+    .thank-you-message {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1982,6 +2067,30 @@ strong {
     .cta-subtext {
         font-size: 12px;
         margin-top: 16px;
+    }
+
+    /* Thank You Page Small Mobile */
+    .thank-you-section {
+        padding: 80px 5%;
+        min-height: 65vh;
+    }
+
+    .thank-you-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+
+    .thank-you-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .thank-you-message {
+        font-size: 16px;
+        margin-bottom: 36px;
     }
 
     .cta-section {

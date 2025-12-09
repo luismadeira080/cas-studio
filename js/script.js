@@ -200,7 +200,9 @@ priorityCheckboxes.forEach(checkbox => {
 
 // Form submission handling
 if (enquiryForm) {
-    enquiryForm.addEventListener('submit', function (e) {
+    enquiryForm.addEventListener('submit', async function (e) {
+        e.preventDefault(); // Prevent default form submission
+
         // Track conversion before form submits
         trackConversion('enquiry_form_submit');
 
@@ -212,7 +214,30 @@ if (enquiryForm) {
             });
         }
 
-        // Allow form to submit naturally to Formspree
+        // Get form data
+        const formData = new FormData(enquiryForm);
+
+        try {
+            // Submit form to Formspree
+            const response = await fetch(enquiryForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Redirect to thank you page on success
+                window.location.href = 'thank-you.html';
+            } else {
+                // Show error if submission failed
+                alert('There was a problem submitting your form. Please try again.');
+            }
+        } catch (error) {
+            // Show error if network request failed
+            alert('There was a problem submitting your form. Please try again.');
+        }
     });
 }
 
