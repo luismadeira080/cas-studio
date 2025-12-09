@@ -1437,7 +1437,17 @@ strong {
     }
 
     .materials-text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .materials-intro {
         font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .materials-list {
+        font-size: 18px;
     }
 
     .luxury-grid,
@@ -1840,7 +1850,8 @@ strong {
     }
 
     .materials-text {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 
     .luxury-text,
@@ -1871,7 +1882,17 @@ strong {
     }
 
     .materials-text {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .materials-intro {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .materials-list {
+        font-size: 16px;
     }
 
     .luxury-text,
