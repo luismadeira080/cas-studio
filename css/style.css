@@ -402,7 +402,7 @@ strong {
 .materials-text {
     font-family: 'Roboto', sans-serif;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     color: #2c2c2c;
     text-align: center;
 }
@@ -1553,7 +1553,7 @@ strong {
 
     .materials-text {
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .materials-intro {
@@ -2016,7 +2016,7 @@ strong {
 
     .materials-text {
         font-size: 16px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .luxury-text,
